@@ -115,7 +115,7 @@ There are multiple channels we plan on making this content available (or not ava
 - Desktop web – for both community members and practitioners
 - Mobile web
 - Email and SMS – notifications
-- ~~Mobile apps~~
+- ~~Mobile apps~~ - see below
 
 On-boarding with Farmacy Family will take place across multiple channels:
 
@@ -191,9 +191,8 @@ See ADR #1 titled &quot;HIPAA specific isolation&quot; for full analysis and con
 - HIPAA
 - Not be in the news
 - Avoid sophisticated access-control mechanisms at all costs.
-- # of use-cases that have access-implications / changes should be \&lt; 5 (ideally) - to ensure end-users (customers) do not make mistakes.
+- Number of use-cases that have access-implications / changes should be \&lt; 5 (ideally) - to ensure end-users (customers) do not make mistakes.
 
-      1.
 ## Security Design aspects (decisions)
 
 - User experience single-handedly drives the Authentication model.
@@ -226,7 +225,7 @@ See ADR #1 titled &quot;HIPAA specific isolation&quot; for full analysis and con
 
 # 4.Summary View of Solution Domains
 
-![](RackMultipart20211101-4-jiky5d_html_1462f540230e6ebf.png)
+![](summary-view.png)
 
 The domains marked as &quot;Green&quot; indicating new solution-components to be developed.
 
@@ -234,27 +233,7 @@ Detailed view of the above, in a Hexagonal Architecture is available as an reada
 
 A thumbnail of the larger diagram is below.
 
-![](RackMultipart20211101-4-jiky5d_html_9087880a0a01dddc.png)
-
-# 5.Architecture Details
-
-## 5.1.Component diagrams
-
-## 5.2.Context diagrams
-
-## 5.3.User journey
-
-## 5.4.Sequence diagrams
-
-## 5.5.System level
-
-## 5.6.Deployment
-
-## 5.7.Other considerations
-
-### Integration
-
-## 5.8.Migration plan
+![](diagram.png)
 
 # 6.Architecture Decision Records
 
@@ -481,43 +460,11 @@ Even otherwise, we estimate that the Engaged-Customers of Farmacy Family will be
 
 For the remainder of the interactions, a web application is best practice (whether from a security perspective or user-experience variability perspective).
 
-## 6.8.Architecture Decision Records Template (copy to write new ones)
-
-### Title
-
-Short noun phrase
-
-### Status
-
-Proposed, superseded, accepted, rejected
-
-### Context
-
-Description of the problem and alternative solutions available (documentation).
-
-### Decision
-
-We will use Architecture Decision Records, as [described by Michael Nygard](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).
-
-### Consequences
-
-See Michael Nygard&#39;s article, linked above. For a lightweight ADR toolset, see Nat Pryce&#39;s [adr-tools](https://github.com/npryce/adr-tools).
-
-Positive: If any
-
-Negative: If any
-
-Risks: If any
-
-Bonus Features: If any
-
 ## 6.9.ADR – Client Engagement
 
 ### Status
 
 Proposed
-
-###
 
 ### Context
 
@@ -531,8 +478,6 @@ Client Engagement as activity with application can be done by multiple ways
 
 These options can be provided on kiosk system or through Mobile Web supported with container-based API to handle feedback related requests.
 
-###
-
 ### Consequences
 
 None Identified so far
@@ -542,8 +487,6 @@ None Identified so far
 ### Status
 
 Proposed
-
-###
 
 ### Context
 
@@ -557,8 +500,6 @@ Below are more details around same
 
 [https://www.humanapi.co/](https://www.humanapi.co/)
 
-###
-
 ### Consequences
 
 None identified so far
@@ -571,8 +512,6 @@ No Risk identified with the choice of well-known Humanapi Service, as it provide
 
 Proposed
 
-###
-
 ### Context
 
 To further improve Client Engagement activities, Farmacy Foods Application can help providing statistic and analytics in graphical form for user to understand intake of meal and consumption of same if client has linked his gym account or fitness account. It will provide more insight around health status and potential improvement around same with diet management by lowering calories intake and more optional suggestion.
@@ -580,8 +519,6 @@ To further improve Client Engagement activities, Farmacy Foods Application can h
 ### Decision
 
 Enabling application with Analytics feedback back to client with Power BI or High chart analytics report will allow client to get more insight on health improvement.
-
-###
 
 ### Consequences
 
@@ -595,8 +532,6 @@ Risk: Any &quot;self-service&quot; ability to create profiles for Clinicians/Die
 
 Proposed
 
-###
-
 ### Context
 
 Based on client engagement and preference to involve in recommendation service, System will use some of their data, and application will get some historical masked data to train model for better recommendation on Meal for certain type of clients with medical or diet needs. To being with System can target only certain category of recommendation like
@@ -608,7 +543,7 @@ Based on client engagement and preference to involve in recommendation service, 
 
 After reviewing the options and exploring services available, it will be advisable to keep recommendation service on different platform which will isolated from transaction platform. And service can be exposed out as service with Rest APIs exposed to provide recommendation. Below is Azure based Recommendation Services layout.
 
-![](RackMultipart20211101-4-jiky5d_html_daf34f406b635f35.gif)
+![](recommendations-service.png)
 
 ### Consequences
 
@@ -616,4 +551,3 @@ Positive: Recommendation service allows ease to use application for client with 
 
 Risk: As it is based on historical data of client from application usage and their other background as well as based on other training data accumulated from various sources, accuracy and security of Model and Data becomes important here.
 
--- End of Document --
