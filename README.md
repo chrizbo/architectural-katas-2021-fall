@@ -2,7 +2,15 @@
 
 # 1.Introduction
 
-To be filled in when near completion…
+We are called Architects++ since we are a group from Cognizant of architects aided by a product manaager. 
+
+The team includes the following people:
+
+- Udaybhaskar Seetamraju (architect)
+- Rakesh Rai (architect)
+- Chris Butler (product manager)
+
+While we were not able to complete the project due to conflicting time (and client) requirements we are very excited to provide this background and thoughts so far. 
 
 # 2.Background
 
