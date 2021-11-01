@@ -14,9 +14,7 @@ Turn [food deserts](https://www.aecf.org/blog/exploring-americas-food-deserts) i
 
 Food deserts are an issue that effects 39.5 million people (or 12.8% of the population) in the United States.
 
-![](RackMultipart20211101-4-jiky5d_html_86f41c190b3a74e.png)
-
-_Figure 1 Source: Low-Income and Low-Supermarket-Access Census Tracts, 2010-2015_
+![Source: Low-Income and Low-Supermarket-Access Census Tracts, 2010-2015](food-deserts-us.png)
 
 The top reason why there are food deserts is the overabundance of &quot;convenience food&quot; rather than healthy food. From the report:
 
