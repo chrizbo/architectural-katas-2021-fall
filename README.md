@@ -203,7 +203,7 @@ See ADR #1 titled &quot;HIPAA specific isolation&quot; for full analysis and con
 - HIPAA
 - Not be in the news
 - Avoid sophisticated access-control mechanisms at all costs.
-- # of use-cases that have access-implications / changes should be \&lt; 5 (ideally) - to ensure end-users (customers) do not make mistakes.
+- Number of use-cases that have access-implications / changes should be \&lt; 5 (ideally) - to ensure end-users (customers) do not make mistakes.
 
 ## 3.10.Security Design aspects (decisions)
 
@@ -259,7 +259,7 @@ All the DDD-defined Services are implemented per the following.
 
 Any functionality that is internal to a DDD-Domain, no matter whether &quot;Reactive design&quot; or traditional-batch, can potentially be addressed in a single model (in diagram below) using AWS Batch.
 
-If there are _ **Non-functional requirements** _ that require a better performant design than AWS-Batch for the &quot;Reactive-design&quot; portions of the solution, we will revisit. _Assumption_: The Farmacy user-base is not a fickle batch that is typical of fashion-oriented or attention-based solutions.
+If there are **Non-functional requirements** that require a better performant design than AWS-Batch for the &quot;Reactive-design&quot; portions of the solution, we will revisit. _Assumption_: The Farmacy user-base is not a fickle batch that is typical of fashion-oriented or attention-based solutions.
 
 ![](backend-components.png)
 
