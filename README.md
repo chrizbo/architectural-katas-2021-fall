@@ -19,7 +19,7 @@ The team includes the following people:
 
 Overview of our solution is available in this six minute presentation:
 
-[![Architects++ kata video submission]({video-thumbnail.png})]({https://www.youtube.com/watch?v=hMQAcyePAFc&list=PLTR1CgetbclHfZvNAR8BTCpA5Hz9qFxqf&index=2} "Architects++ O'Reilly kata fall 2021 video submission")
+[![Architects++ kata video submission](video-thumbnail.png)]({https://www.youtube.com/watch?v=hMQAcyePAFc&list=PLTR1CgetbclHfZvNAR8BTCpA5Hz9qFxqf&index=2} "Architects++ O'Reilly kata fall 2021 video submission")
 
 # 2.Background <a name="background"></a>
 
